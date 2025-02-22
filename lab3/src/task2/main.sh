@@ -1,13 +1,17 @@
-#/bin/bash                                                                                 
+#!/bin/bash                                                                                 
 
 declare FOLDER=src/task1/target
 
-declare -i rand_numb=$(( 0 + $RANDOM % 1 ))
-declare FILE=$FOLDER/file$rand_numb.txt
+declare FILE=$FOLDER/file0.txt
 
 if [ -f $FILE ]
 then 
+	echo ls $FOLDER
+	ls $FOLDER
+
 	rm $FILE
+
+	echo ls $FOLDER
 	ls $FOLDER
 else
 	echo "$FILE doesn't exist!"

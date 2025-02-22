@@ -1,16 +1,20 @@
 SRC_DIR := src
 REPORT_DIR := report
 
-SRC := $(SRC_DIR)
 RPRT := $(REPORT_DIR)/report.pdf
 
+BSH := bash
 PDFLTX := pdflatex
 
 OUTPUT := --output-directory
 
 .PHONY: all
 
-all: clean run-report clean-aux
+all: clean run-task% run-report clean-aux
+
+run-task%:
+	@echo "Running a task$*.."
+	@$(BSH) ./$(SRC_DIR)/task$*/main.sh
 
 run-report: $(RPRT)
 	@echo "Running a report.."

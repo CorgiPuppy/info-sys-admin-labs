@@ -8,9 +8,9 @@ PDFLTX := pdflatex
 
 OUTPUT := --output-directory
 
-.PHONY: all
+.PHONY: all run-task% 
 
-all: clean run-task% run-report clean-aux
+all: clean run-report clean-aux
 
 run-task%:
 	@echo "Running a task$*.."

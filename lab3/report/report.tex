@@ -178,15 +178,29 @@
 			\subsection*{Задание 11}
 			\addcontentsline{toc}{subsection}{Задание 11}
 			Изучите назначение файла \textit{/etc/sudoers}. Используя visudo, добавьте в файл \textit{sudoers} строку, которая позволяет пользователю \textit{student} выполнять команду \textbf{pacman} (работа с ПО).
+			\begin{center}
+				\includegraphics[width=500pt]{task11/task11_1.png}
+				\includegraphics[width=500pt]{task11/task11_2.png}
+			\end{center}
 	
 			\subsection*{Задание 12}
 			\addcontentsline{toc}{subsection}{Задание 12}
 			Добавьте пользователя \textit{student}, группа \textit{student} в операционную систему одной командой (читать \textbf{man useradd} или adduser). Зайдите под его учётной записью. Установите программу gnuplot.
-	
+			\lstset{style=mystyle}
+			\lstinputlisting[language=Bash]{src/task12/main.sh}
+			\begin{center}
+				\includegraphics[width=500pt]{task12.png}
+			\end{center}
+
 			\subsection*{Задание 13}
 			\addcontentsline{toc}{subsection}{Задание 13}
 			Под учётной записью \textit{student} создайте командой папку \textit{PAPKA1} в директории \textit{/tmp}.
-	
+			\lstset{style=mystyle}
+			\lstinputlisting[language=Bash]{src/task13/main.sh}
+			\begin{center}
+				\includegraphics[width=500pt]{task13.png}
+			\end{center}
+
 			\subsection*{Задание 14}
 			\addcontentsline{toc}{subsection}{Задание 14}
 			Создайте под учётной записью \textit{root} одной командой вложенную папку \textit{/tmp/PAPKA2/PAPKA3}. В ней создайте одной командой файл, содержащий десять последних строк файла \textit{/etc/hosts}. Выйдите из-под рута.

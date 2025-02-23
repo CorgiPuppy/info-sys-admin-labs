@@ -9,6 +9,7 @@ then
 	echo ls $FOLDER
 	ls $FOLDER
 
+	echo "rm $FILE"
 	rm $FILE
 
 	echo ls $FOLDER

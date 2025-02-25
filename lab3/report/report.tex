@@ -204,15 +204,30 @@
 			\subsection*{Задание 14}
 			\addcontentsline{toc}{subsection}{Задание 14}
 			Создайте под учётной записью \textit{root} одной командой вложенную папку \textit{/tmp/PAPKA2/PAPKA3}. В ней создайте одной командой файл, содержащий десять последних строк файла \textit{/etc/hosts}. Выйдите из-под рута.
-	
+			\lstset{style=mystyle}
+			\lstinputlisting[language=Bash]{src/task14/main.sh}
+			\begin{center}
+				\includegraphics[width=500pt]{task14.png}
+			\end{center}
+
 			\subsection*{Задание 15}
 			\addcontentsline{toc}{subsection}{Задание 15}
 			Под учётной записью \textit{student} создайте в \textit{PAPKA1} файл \textit{4!!4.txt}, содержащий последние десять строк файла \textit{~/.bashrc}. Проверьте, что файл с именем \textit{4!!4.txt} корректно создан - другие имена не принимаются. Добавьте в файл \textit{4!!4.txt}, не затирая прошлые \underline{10} строк, ещё первые \underline{10} строк файла \textit{~/.bashrc}.
-	
+			\lstset{style=mystyle}
+			\lstinputlisting[language=Bash]{src/task15/main.sh}
+			\begin{center}
+				\includegraphics[width=500pt]{task15.png}
+			\end{center}
+
 			\subsection*{Задание 16}
 			\addcontentsline{toc}{subsection}{Задание 16}
 			Под учётной записью \textit{student} попробуйте удалить обе папки командой \textbf{rm} без использования \textbf{опций} команды. Если не получилось, попробуйте удалить их по отдельности. Удалось? Если нет, то укажите причины.
-	
+			\lstset{style=mystyle}
+			\lstinputlisting[language=Bash]{src/task16/main.sh}
+			\begin{center}
+				\includegraphics[width=500pt]{task16.png}
+			\end{center}
+
 			\subsection*{Задание 17}
 			\addcontentsline{toc}{subsection}{Задание 17}
 			Изучите файл \textit{~/.bashrc}. Увеличьте максимальную длину файла с историй и максимальное количество строк, выводимых командой \textbf{history} в \underline{10} раз. Сделайте это на постоянной основе (не только, пока запущен данный терминал) - используйте \textbf{export}.
@@ -220,7 +235,12 @@
 			\subsection*{Задание 18}
 			\addcontentsline{toc}{subsection}{Задание 18}
 			Выведите содержимое домашней папки в длинном формате вместе со скрытыми файлами сортированной по времени, первыми идёт самые старые файлы и папки. Задание выполнить одной командой \textbf{ls} и её опциями, не использовать команду \textbf{sort}.
-	
+			\lstset{style=mystyle}
+			\lstinputlisting[language=Bash]{src/task18/main.sh}
+			\begin{center}
+				\includegraphics[width=500pt]{task18.png}
+			\end{center}
+
 			\subsection*{Задание 19}
 			\addcontentsline{toc}{subsection}{Задание 19}
 			Создайте в домашней директории папку \textit{bin}, в ней файл \textit{bubble} с правами \underline{744}. В файл добавьте: \par
@@ -228,7 +248,12 @@
 			\textit{ls} \par
 			Запустите её из папки как \textit{./bubble} (добейтесь корректного запуска). \par
 			Теперь измените переменную \textit{PATH} системы - внесите запись в \textit{~/.bashrc} - так, чтобы программу \textit{bubble} можно было запустить просто словом \textit{bubble} (не затрите старое значение \textit{\$PATH}, а добавье к ней нужную папку). Молодцы, теперь Вы знаете, зачем нужен \textit{\$PATH}.
-	
+			\lstset{style=mystyle}
+			\lstinputlisting[language=Bash]{src/task19/main.sh}
+			\begin{center}
+				\includegraphics[width=500pt]{task19.png}
+			\end{center}
+
 			\subsection*{Задание 20}
 			\addcontentsline{toc}{subsection}{Задание 20}
 			Заархивируйте три файла в \textit{tarball} со сжатием \textit{bzip2}.

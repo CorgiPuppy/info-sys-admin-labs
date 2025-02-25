@@ -1,5 +1,4 @@
 #!/bin/bash                                                                                 
-
 declare FOLDER=src/task1/target
 declare -i LEN=3
 declare -a FILES

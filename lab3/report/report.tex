@@ -173,11 +173,36 @@
 	
 			\subsection*{Задание 10}
 			\addcontentsline{toc}{subsection}{Задание 10}
-			Изучите, что делает нажатие TAB, стрелочки вверх и вниз на клавиатуре, а также нажатие Ctrl-r и ввод текста (введите \textbf{ls}). Возьмите на вооружение.
+			Изучите, что делает нажатие TAB, стрелочки вверх и вниз на клавиатуре, а также нажатие Ctrl-r и ввод текста (введите \textbf{ls}). Возьмите на вооружение. \par
+			\textit{TAB} используется для автодополнения команд или имён файлов или директорий. Например, я прописываю команду \textbf{ls} и после пробела нажимаю на \textit{TAB}, но ничего не происходит, поскольку нет одного единственного автодополнения. После второго нажатия на \textit{TAB} терминал покажет список всех доступных вариантов.
 			\begin{center}
-				\includegraphics[width=500pt]{task10/task10_1.png}
-				\includegraphics[width=500pt]{task10/task10_2.png}
+				\includegraphics[width=400pt]{task10/task10_1.png}
+				\includegraphics[width=400pt]{task10/task10_2.png}
+			\end{center} \par
+			Если я начну вводитьимя файла или директории и нажму \textit{TAB}, терминал попытается дополнить его автоматически, поскольку существует только одно совпадение.
+			\begin{center}
+				\includegraphics[width=400pt]{task10/task10_3.png}
+				\includegraphics[width=400pt]{task10/task10_4.png}
+			\end{center} \par
+			\textit{Стрелочки вверх и вниз} позволяют перемещаться по истории команд в командной строке. Например, нажатие стрелки вверх дважды покажет предпоследнюю введённую команду.	
+			\begin{center}
+				\includegraphics[width=400pt]{task10/task10_5.png}
+				\includegraphics[width=400pt]{task10/task10_6.png}
+			\end{center} \par
+			А стрелка вниз - следующую после команды, к которой пришли стрелкой вверх. Это удобно для быстроого повторного ввода команд без необходимости их повторого набора.
+			\begin{center}
+				\includegraphics[width=400pt]{task10/task10_7.png}
+			\end{center} \par
+			\textit{Ctrl+R} позволяет открыть режим поиска по истории команд. Например, после ввода текста, терминал будет показывать последие команды, которые содержат введённый текст, что позволяет быстро находить и повторно использовать ранее введенные команды.
+			\begin{center}
+				\includegraphics[width=400pt]{task10/task10_8.png}
+				\includegraphics[width=400pt]{task10/task10_9.png}
+			\end{center} \par
+			\textit{Ввод текста}, например, \textbf{ls} позволяет отображать список файлов и директорий в текущем каталоге. После ввода команды терминал выведет результат на экран.
+			\begin{center}
+				\includegraphics[width=400pt]{task10/task10_10.png}
 			\end{center}
+
 			\subsection*{Задание 11}
 			\addcontentsline{toc}{subsection}{Задание 11}
 			Изучите назначение файла \textit{/etc/sudoers}. Используя visudo, добавьте в файл \textit{sudoers} строку, которая позволяет пользователю \textit{student} выполнять команду \textbf{pacman} (работа с ПО).
@@ -219,7 +244,7 @@
 			\lstset{style=mystyle}
 			\lstinputlisting[language=Bash]{src/task15/main.sh}
 			\begin{center}
-				\includegraphics[width=500pt]{task15.png}
+				\includegraphics[width=300pt]{task15.png}
 			\end{center}
 
 			\subsection*{Задание 16}

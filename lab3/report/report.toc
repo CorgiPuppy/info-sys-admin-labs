@@ -1,0 +1,23 @@
+\babel@toc {russian}{}\relax 
+\contentsline {section}{Описание и выполнение задачи}{1}{section*.2}%
+\contentsline {subsection}{Задание 1}{1}{section*.3}%
+\contentsline {subsection}{Задание 2}{1}{section*.4}%
+\contentsline {subsection}{Задание 3}{2}{section*.5}%
+\contentsline {subsection}{Задание 4}{3}{section*.6}%
+\contentsline {subsection}{Задание 5}{4}{section*.7}%
+\contentsline {subsection}{Задание 6}{4}{section*.8}%
+\contentsline {subsection}{Задание 7}{5}{section*.9}%
+\contentsline {subsection}{Задание 8}{6}{section*.10}%
+\contentsline {subsection}{Задание 9}{6}{section*.11}%
+\contentsline {subsection}{Задание 10}{7}{section*.12}%
+\contentsline {subsection}{Задание 11}{9}{section*.13}%
+\contentsline {subsection}{Задание 12}{10}{section*.14}%
+\contentsline {subsection}{Задание 13}{10}{section*.15}%
+\contentsline {subsection}{Задание 14}{11}{section*.16}%
+\contentsline {subsection}{Задание 15}{12}{section*.17}%
+\contentsline {subsection}{Задание 16}{13}{section*.18}%
+\contentsline {subsection}{Задание 17}{14}{section*.19}%
+\contentsline {subsection}{Задание 18}{16}{section*.20}%
+\contentsline {subsection}{Задание 19}{17}{section*.21}%
+\contentsline {subsection}{Задание 20}{18}{section*.22}%
+\contentsline {subsection}{Задание 21}{19}{section*.23}%

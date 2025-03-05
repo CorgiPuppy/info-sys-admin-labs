@@ -14,7 +14,10 @@ all: clean-report run-report clean-aux
 
 run-task%:
 	@echo "Running a task$*.."
-	@$(BSH) ./$(SRC_DIR)/task$*/main.sh
+	sudo docker buildx build -t task$*:latest .
+	sudo docker buildx build --load -t task$*:latest .
+	sudo docker run task$* ./src/task$*.sh
+	#@$(BSH) ./$(SRC_DIR)/task$*/main.sh
 
 run-report: $(RPRT)
 	@echo "Running a report.."

@@ -99,7 +99,7 @@
 	caption: [Задание 2.],
 	supplement: [Рис.],
 ) <task2>
-#let results = csv("../task2.csv")
+#let results = csv("../outputs/task2.csv")
 #table(
   columns: 4,
   ..results.flatten(),

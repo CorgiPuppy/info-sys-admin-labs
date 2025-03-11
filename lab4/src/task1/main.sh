@@ -1,6 +1,11 @@
 #!/bin/bash
 
-set -v
-cal | head -n 4
+declare -i YEAR=2025
+declare -i MONTH=3
+declare -i FIRST_LINE=1
+declare -i LAST_LINE=4
 
-scrot 'task1.png' -e 'mv $f ./assets/';
+set -v
+cal -m $MONTH $YEAR | awk -v first_line="$FIRST_LINE" -v last_line="$LAST_LINE" 'NR>=first_line && NR<=last_line'
+
+scrot -c -d 5 'task1.png' -e 'mv $f ./assets/';

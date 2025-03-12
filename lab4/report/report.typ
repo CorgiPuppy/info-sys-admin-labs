@@ -1,3 +1,12 @@
+#show raw.where(block: true): it => { set par(justify: false); grid(
+  columns: (100%, 100%),
+  column-gutter: -100%,
+  block(width: 100%, inset: 1em, for i in it.text.split("\n") {
+    linebreak()
+  }),
+  block(radius: 1em, fill: luma(246), width: 100%, inset: 1em, it),
+)}
+
 #set page(
 	paper: "a4",
 	margin: (x: 0.8cm, y: 1.5cm),
@@ -83,6 +92,8 @@
 	= Описание и выполнение задачи 
 	== Задание 1
 ])
+#let codeblock-1 = read("../src/task1/main.sh")
+#raw(codeblock-1, block:true, lang: "bash")
 (@task1)
 #figure(
 	image("../assets/task1.png"),
@@ -93,6 +104,8 @@
 #align(center, block[
 	== Задание 2
 ])
+#let codeblock-2 = read("../src/task2/main.sh")
+#raw(codeblock-2, block:true, lang: "bash")
 (@task2)
 #figure(
 	image("../assets/task2.png"),
@@ -108,6 +121,8 @@
 #align(center, block[
 	== Задание 3
 ])
+#let codeblock-3 = read("../src/task3/main.sh")
+#raw(codeblock-3, block:true, lang: "bash")
 (@task3)
 #figure(
 	image("../assets/task3.png"),

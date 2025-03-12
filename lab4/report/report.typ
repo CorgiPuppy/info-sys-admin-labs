@@ -134,3 +134,26 @@
 	caption: [Задание 3.],
 	supplement: [Рис.],
 ) <task3_plot>
+
+#align(center, block[
+	== Задание 4
+])
+#let codeblock-4 = read("../src/task4/main.sh")
+#raw(codeblock-4, block:true, lang: "bash")
+(@task4)
+#figure(
+	image("../assets/task4.png"),
+	caption: [Задание 4.],
+	supplement: [Рис.],
+) <task4>
+#align(center, block[
+	== Задание 4
+])
+#let codeblock-5 = read("../src/task5/main.sh")
+#raw(codeblock-5, block:true, lang: "bash")
+(@task5)
+#figure(
+	image("../assets/task5.png"),
+	caption: [Задание 5.],
+	supplement: [Рис.],
+) <task5>

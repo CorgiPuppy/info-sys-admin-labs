@@ -6,6 +6,7 @@ RPRT := $(REPORT_DIR)/report.pdf
 GNP := $(wildcard $(GNUPLOT_DIR)/*.p)
 
 BSH := bash
+BTS := bats
 GNPLT := gnuplot
 TPST := typst compile --root .
 ZTHR := zathura
@@ -17,6 +18,10 @@ all: clean-report compile-gnp run-report
 run-task%:
 	@echo "Running a task$*.."
 	@$(BSH) ./$(SRC_DIR)/task$*/main.sh
+
+test-task%:
+	@echo "Running a test for the task$*.."
+	@$(BTS) ./$(SRC_DIR)/task$*/test_main.bats
 
 compile-gnp: $(GNP)
 	@echo "Compile gnuplot files.."

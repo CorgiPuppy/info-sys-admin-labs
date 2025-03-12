@@ -147,7 +147,7 @@
 	supplement: [Рис.],
 ) <task4>
 #align(center, block[
-	== Задание 4
+	== Задание 5
 ])
 #let codeblock-5 = read("../src/task5/main.sh")
 #raw(codeblock-5, block:true, lang: "bash")

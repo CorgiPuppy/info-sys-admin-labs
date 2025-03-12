@@ -92,9 +92,10 @@
 	= Описание и выполнение задачи 
 	== Задание 1
 ])
+#set text(size: 12pt)
+Вывести календарь на первую неделю марта. Используйте #text(style: "italic", "cal") (@task1).
 #let codeblock-1 = read("../src/task1/main.sh")
 #raw(codeblock-1, block:true, lang: "bash")
-(@task1)
 #figure(
 	image("../assets/task1.png"),
 	caption: [Задание 1.],
@@ -104,9 +105,10 @@
 #align(center, block[
 	== Задание 2
 ])
+#set text(size: 12pt)
+Найти файлы в домашней папке, изменённые за последний час (@task2).
 #let codeblock-2 = read("../src/task2/main.sh")
 #raw(codeblock-2, block:true, lang: "bash")
-(@task2)
 #figure(
 	image("../assets/task2.png"),
 	caption: [Задание 2.],
@@ -121,9 +123,10 @@
 #align(center, block[
 	== Задание 3
 ])
+#set text(size: 12pt)
+Найти слово #text(style: "oblique", "source") внутри всех файлов в папке #text(style: "oblique", "/usr/src/") (@task3, @task3_plot).
 #let codeblock-3 = read("../src/task3/main.sh")
 #raw(codeblock-3, block:true, lang: "bash")
-(@task3)
 #figure(
 	image("../assets/task3.png"),
 	caption: [Задание 3.],
@@ -138,17 +141,19 @@
 #align(center, block[
 	== Задание 4
 ])
+Сделать мягкую ссылку на файл #text(style: "oblique", "/tmp/.X0-lock") в домашней папке. Прочитайте содержимое файла через ссылку. Удалите мягкую ссылку (@task4).
 #let codeblock-4 = read("../src/task4/main.sh")
 #raw(codeblock-4, block:true, lang: "bash")
-(@task4)
 #figure(
 	image("../assets/task4.png"),
 	caption: [Задание 4.],
 	supplement: [Рис.],
 ) <task4>
+
 #align(center, block[
 	== Задание 5
 ])
+Одной командой найти все файлы в #text(style: "oblique", "/usr/lib") с именем из 12 букв, и вывести их содержимое в единый файл #text(style: "oblique", "~/superdebug") (@task5).
 #let codeblock-5 = read("../src/task5/main.sh")
 #raw(codeblock-5, block:true, lang: "bash")
 (@task5)

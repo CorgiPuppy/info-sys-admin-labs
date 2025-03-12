@@ -99,8 +99,23 @@
 	caption: [Задание 2.],
 	supplement: [Рис.],
 ) <task2>
-#let results = csv("../outputs/task2.csv")
+#let results = csv("../outputs/task2/output.csv")
 #table(
   columns: 4,
   ..results.flatten(),
 )
+
+#align(center, block[
+	== Задание 3
+])
+(@task3)
+#figure(
+	image("../assets/task3.png"),
+	caption: [Задание 3.],
+	supplement: [Рис.],
+) <task3>
+#figure(
+	image("../plots/pictures/task3.png"),
+	caption: [Задание 3.],
+	supplement: [Рис.],
+) <task3_plot>

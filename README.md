@@ -1,1 +1,2 @@
-# administration-of-information-systems-labs
+# Курс "Администрирование информационных систем"
+## 3 курс

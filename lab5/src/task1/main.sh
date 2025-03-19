@@ -3,5 +3,5 @@
 declare TARGET_DIR=/etc
 declare USER=root
 
-set -x
-find $TARGET_DIR -type f -user $USER -exec ls -l {} + | sort -nr -k5 | head -n 1 | awk '{print $9, $5}'
+set -v
+find $TARGET_DIR -type f -user $USER 2> >(grep -v 'Permission denied$' 1>&2) -exec ls -l {} + | sort -nr -k5 | head -n 1 | awk '{print $9, $5}'

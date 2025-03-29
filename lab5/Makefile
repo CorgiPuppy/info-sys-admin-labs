@@ -10,7 +10,7 @@ OUTPUT := --output-directory
 
 .PHONY: all run-task% 
 
-all: clean run-report clean-aux
+all: clean-report run-report clean-aux
 
 run-task%:
 	@echo "Running a task$*.."
@@ -29,6 +29,6 @@ clean-aux:
 	@echo "Cleaning up auxiliary files.."
 	@find $(REPORT_DIR) -type f ! -name '*.pdf' ! -name '*.tex' -delete
 
-clean:
-	@echo "Cleaning up.."
+clean-report:
+	@echo "Cleaning the report.."
 	@$(RM) $(RPRT)

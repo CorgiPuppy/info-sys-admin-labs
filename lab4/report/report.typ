@@ -54,10 +54,10 @@
 		columns: (8.85cm,) + (10.8cm,),
 		stroke: none,
 
-		table.cell(text(size: 14.4pt, "Выполнил студент группы КС-36:"), align: right), table.cell(text(size: 14.4pt, "Золотухин А.А."), align: left),
+		table.cell(text(size: 14.4pt, "Выполнил студент группы КС-36:"), align: right), table.cell(text(size: 14.4pt, "Золотухин Андрей Александрович"), align: left),
 		table.cell(text(size: 14.4pt, "Ссылка на репозиторий:"), align: right), table.cell(text(size: 14.4pt, "https://github.com/"), align: left),
 		table.cell("", align: right), table.cell(text(size: 14.4pt, "CorgiPuppy/"), align: left),
-		table.cell("", align: right), table.cell(text(size: 14.4pt, "administration-of-information-systems-labs"), align: left),
+		table.cell("", align: right), table.cell(text(size: 14.4pt, "info-sys-admin-labs"), align: left),
 		table.cell(text(size: 14.4pt, "Принял:"), align: right), table.cell(text(size: 14.4pt, "Митричев Иван Игоревич"), align: left),
 		table.cell(text(size: 14.4pt, "Дата сдачи:"), align: right), table.cell(text(size: 14.4pt, "12.03.25"), align: left),
 		

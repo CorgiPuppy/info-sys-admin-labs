@@ -36,5 +36,5 @@ $(RPRT): $(REPORT_DIR)/*.typ
 	@$(TPST) $<
 
 clean-report:
-	@echo "Cleaning up.."
+	@echo "Cleaning the report.."
 	@$(RM) $(RPRT)

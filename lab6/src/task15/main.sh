@@ -20,6 +20,7 @@ declare FOLDER_GROUPS=/etc/group
 declare GROUP_NAME=mygroup
 declare GROUP=g
 declare RIGHTS_DIR=rx
+declare DEFAULT_RIGHTS_DIR=rw
 
 mkdir $TARGET_DIR
 sudo useradd -s $SHELL_USER1 -m -d $CATALOG_USER1 $USER1
@@ -35,8 +36,8 @@ sudo gpasswd -a $USER2 $GROUP_NAME
 setfacl -m $GROUP:$GROUP_NAME:$RIGHTS_DIR $TARGET_DIR
 
 getfaclDir $TARGET_DIR
-echo "setfacl -d -m $GROUP:$GROUP_NAME:$RIGHTS_DIR $TARGET_DIR"
-setfacl -d -m $GROUP:$GROUP_NAME:$RIGHTS_DIR $TARGET_DIR
+echo "setfacl -d -m $GROUP:$GROUP_NAME:$DEFAULT_RIGHTS_DIR $TARGET_DIR"
+setfacl -d -m $GROUP:$GROUP_NAME:$DEFAULT_RIGHTS_DIR $TARGET_DIR
 getfaclDir $TARGET_DIR
 
 rm $TARGET_FILE

@@ -25,9 +25,9 @@ declare RIGHTS=w
 
 mkdir $TARGET_DIR
 sudo useradd -s $SHELL_USER2 -m -d $CATALOG_USER2 $USER2
-
-echo "touch $TARGET_FILE"
+chmod 700 $TARGET_DIR
 touch $TARGET_FILE
+chmod u+rw,g=r $TARGET_FILE
 
 listFile $TARGET_FILE
 getfaclFile $TARGET_FILE

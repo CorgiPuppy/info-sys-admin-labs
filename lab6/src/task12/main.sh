@@ -12,8 +12,10 @@ getfaclFile() {
 }
 
 declare FOLDER_NAME=$HOME
+declare TARGET_DIR_NAME=test_dir
+declare TARGET_DIR=$FOLDER_NAME/$TARGET_DIR_NAME
 declare TARGET_FILE_NAME=file1.txt
-declare TARGET_FILE=$FOLDER_NAME/$TARGET_FILE_NAME
+declare TARGET_FILE=$TARGET_DIR/$TARGET_FILE_NAME
 declare USER2=user2
 declare SHELL_USER2=/bin/bash
 declare CATALOG_USER2=/home/user2
@@ -21,6 +23,7 @@ declare FOLDER_USERS=/etc/passwd
 declare USER=u
 declare RIGHTS=w
 
+mkdir $TARGET_DIR
 sudo useradd -s $SHELL_USER2 -m -d $CATALOG_USER2 $USER2
 
 echo "touch $TARGET_FILE"
@@ -36,5 +39,6 @@ listFile $TARGET_FILE
 getfaclFile $TARGET_FILE
 
 rm $TARGET_FILE
+rmdir $TARGET_DIR
 sudo userdel -r 2>/dev/null $USER1
 sudo userdel -r 2>/dev/null $USER2

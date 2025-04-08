@@ -47,6 +47,8 @@ echo "I can write to the file because of access rights."
 echo "chmod $RIGHTS_FILE $TARGET_FILE"
 chmod $RIGHTS_FILE $TARGET_FILE
 
+listFile $TARGET_FILE
+
 echo "echo "$HELLO_TEXT" > $TARGET_FILE"
 echo $HELLO_TEXT > $TARGET_FILE
 echo "I can't write to the file because of access rights."

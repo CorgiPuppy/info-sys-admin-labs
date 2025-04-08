@@ -19,7 +19,6 @@ declare SHELL_USER2=/bin/bash
 declare CATALOG_USER2=/home/user2
 declare FOLDER_USERS=/etc/passwd
 
-echo "sudo useradd -s $SHELL_USER2 -m -d $CATALOG_USER2 $USER2"
 sudo useradd -s $SHELL_USER2 -m -d $CATALOG_USER2 $USER2
 
 echo "touch $TARGET_FILE"

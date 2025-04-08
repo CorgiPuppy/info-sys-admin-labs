@@ -5,7 +5,8 @@ function listFile {
 	ls -l $1
 }
 
-function listDir {
+declare -f listDir
+listDir() {
 	echo "ls -ld $1"
 	ls -ld $1
 }

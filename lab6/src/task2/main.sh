@@ -10,6 +10,9 @@ declare FILE_NAME=example.txt
 declare FILE=$FOLDER_NAME/$FILE_NAME
 declare -i RIGHTS=600
 
+echo "touch $FILE"
+touch $FILE
+
 listFile $FILE
 
 echo "chmod $RIGHTS $FILE"

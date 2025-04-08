@@ -7,7 +7,7 @@ function listFile {
 
 declare -f getfaclFile 
 getfaclFile() {
-	echo "getfacl $1"
+	echo "getfacl 2>/dev/null $1"
 	getfacl 2>/dev/null $1
 }
 

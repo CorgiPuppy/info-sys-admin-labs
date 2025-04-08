@@ -1,6 +1,6 @@
 #!/bin/bash
 
-function showFile {
+function listFile {
 	echo "ls -l $1"
 	ls -l $1
 }
@@ -8,16 +8,14 @@ function showFile {
 declare FOLDER_NAME=$HOME
 declare FILE_NAME=example.txt
 declare FILE=$FOLDER_NAME/$FILE_NAME
+declare -i RIGHTS=644
 
 echo "touch $FILE"
 touch $FILE
 
-showFile $FILE
+listFile $FILE
 
-echo "chmod 644 $FILE"
-chmod 644 $FILE
+echo "chmod $RIGHTS $FILE"
+chmod $RIGHTS $FILE
 
-showFile $FILE
-
-echo "rm $FILE"
-rm $FILE
+listFile $FILE

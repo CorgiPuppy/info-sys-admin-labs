@@ -30,7 +30,7 @@ chmod $RIGHTS_DIR $TARGET_DIR
 
 listDir $TARGET_DIR
 
-echo "echo "$HELLO_TEXT" > $TARGET_FILE"
+echo "echo \"$HELLO_TEXT\" > $TARGET_FILE"
 echo $HELLO_TEXT > $TARGET_FILE
 
 echo "cat $TARGET_FILE"
@@ -38,7 +38,7 @@ cat $TARGET_FILE
 
 listFile $TARGET_FILE
 
-echo "echo "$BYE_TEXT" > $TARGET_FILE"
+echo "echo \"$BYE_TEXT\" > $TARGET_FILE"
 echo $BYE_TEXT > $TARGET_FILE
 echo "cat $TARGET_FILE"
 cat $TARGET_FILE
@@ -49,7 +49,7 @@ chmod $RIGHTS_FILE $TARGET_FILE
 
 listFile $TARGET_FILE
 
-echo "echo "$HELLO_TEXT" > $TARGET_FILE"
+echo "echo \"$HELLO_TEXT\" > $TARGET_FILE"
 echo $HELLO_TEXT > $TARGET_FILE
 echo "I can't write to the file because of access rights."
 

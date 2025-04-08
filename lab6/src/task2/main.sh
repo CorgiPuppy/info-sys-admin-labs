@@ -17,5 +17,4 @@ chmod $RIGHTS $FILE
 
 listFile $FILE
 
-echo "rm $FILE"
 rm $FILE

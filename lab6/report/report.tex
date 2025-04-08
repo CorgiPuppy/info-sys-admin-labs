@@ -52,106 +52,122 @@
 
 \begin{document}
 	\begin{titlepage}
-			\begin{center}
-				\large \textbf{Министерство науки и высшего образования Российской Федерации} \\
-				\large \textbf{Федеральное государственное бюджетное образовательное учреждение высшего образования} \\
-				\large \textbf{«Российский химико-технологический университет имени Д.И. Менделеева»} \\
+		\begin{center}
+			\large \textbf{Министерство науки и высшего образования Российской Федерации} \\
+			\large \textbf{Федеральное государственное бюджетное образовательное учреждение высшего образования} \\
+			\large \textbf{«Российский химико-технологический университет имени Д.И. Менделеева»} \\
 
-				\vspace*{4cm}
-				\LARGE \textbf{ОТЧЕТ ПО ЛАБОРАТОРНОЙ РАБОТЕ №6}
+			\vspace*{4cm}
+			\LARGE \textbf{ОТЧЕТ ПО ЛАБОРАТОРНОЙ РАБОТЕ №6}
 
-				\vspace*{4cm}
-				\begin{flushright}
-					\Large
-					\begin{tabular}{>{\raggedleft\arraybackslash}p{8.85cm} p{10.8cm}}
-						Выполнил студент группы КС-36: & Золотухин Андрей Александрович \\
-						Ссылка на репозиторий: & https://github.com/ \\ 
-						& CorgiPuppy/ \\
-						& info-sys-admin-labs \\
-						Принял: & Митричев Иван Игоревич \\
-						Дата сдачи: & 09.04.2025 \\
-					\end{tabular}
+			\vspace*{4cm}
+			\begin{flushright}
+				\Large
+				\begin{tabular}{>{\raggedleft\arraybackslash}p{8.85cm} p{10.8cm}}
+					Выполнил студент группы КС-36: & Золотухин Андрей Александрович \\
+					Ссылка на репозиторий: & https://github.com/ \\ 
+					& CorgiPuppy/ \\
+					& info-sys-admin-labs \\
+					Принял: & Митричев Иван Игоревич \\
+					Дата сдачи: & 09.04.2025 \\
+				\end{tabular}
 
-				\end{flushright}
+			\end{flushright}
 
-				\vspace*{6cm}
-				\Large \textbf{Москва \\ 2025}
-			\end{center}
-		\end{titlepage}
-		
-		\tableofcontents	
-		\thispagestyle{empty}
-		\newpage
+			\vspace*{6cm}
+			\Large \textbf{Москва \\ 2025}
+		\end{center}
+	\end{titlepage}
+	
+	\tableofcontents	
+	\thispagestyle{empty}
+	\newpage
 
-		\pagenumbering{arabic}
-		
-		\section*{Описание и выполнение задачи}
-		\addcontentsline{toc}{section}{Описание и выполнение задачи}	
-		\large
-		Задания 1-20 выполняются в терминале (bash) со скриншотами. \par
+	\pagenumbering{arabic}
+	
+	\section*{Описание и выполнение задачи}
+	\addcontentsline{toc}{section}{Описание и выполнение задачи}	
+	\large
+	Задания 1-20 выполняются в терминале (bash) со скриншотами. \par
 
-		\subsection*{Задание 1}
-		\addcontentsline{toc}{subsection}{Задание 1}
-		\begin{enumerate}
-			\item Создайте файл \textit{example.txt} в домашней директории;
-			\item Установите права доступа для файла в формате \underline{644} (владелец может читать и записывать, группа и остальные могут только читать).
-		\end{enumerate}
-		\lstset{style=mystyle}
-		\lstinputlisting[language=Bash]{src/task1/main.sh}
-	% \begin{center}
-	% 	\includegraphics[width=500pt]{task1.png}
-	% \end{center}
+	\subsection*{Задание 1}
+	\addcontentsline{toc}{subsection}{Задание 1}
+	\begin{enumerate}
+		\item Создайте файл \textit{example.txt} в домашней директории;
+		\item Установите права доступа для файла в формате \underline{644} (владелец может читать и записывать, группа и остальные могут только читать).
+	\end{enumerate}
+	\lstset{style=mystyle}
+	\lstinputlisting[language=Bash]{src/task1/main.sh}
+% \begin{center}
+% 	\includegraphics[width=500pt]{task1.png}
+% \end{center}
 
-		\subsection*{Задание 2}
-		\addcontentsline{toc}{subsection}{Задание 2}
-		\begin{enumerate}
-			\item Измените права доступа для файла \textit{example.txt} на \underline{600} (только владелец может читать и записывать);
-			\item Проверьте права доступа с помощью команды \textit{ls -l}.
-		\end{enumerate}
-		\lstset{style=mystyle}
-		\lstinputlisting[language=Bash]{src/task2/main.sh}
-	% \begin{center}
-	% 	\includegraphics[width=500pt]{task2.png}
-	% \end{center}
+	\subsection*{Задание 2}
+	\addcontentsline{toc}{subsection}{Задание 2}
+	\begin{enumerate}
+		\item Измените права доступа для файла \textit{example.txt} на \underline{600} (только владелец может читать и записывать);
+		\item Проверьте права доступа с помощью команды \textit{ls -l}.
+	\end{enumerate}
+	\lstset{style=mystyle}
+	\lstinputlisting[language=Bash]{src/task2/main.sh}
+% \begin{center}
+% 	\includegraphics[width=500pt]{task2.png}
+% \end{center}
 
-		\subsection*{Задание 3}
-		\addcontentsline{toc}{subsection}{Задание 3}
-		\begin{enumerate}
-			\item Создайте директорию \textit{mydir};
-			\item Установите права доступа для директории в формате \underline{755} (владелец может читать, записывать и выполнять, группа и остальные могут только читать и выполнять;
-			\item Создайте непустой файл \textit{mydir/file2.txt}, права по умолчанию;
-			\item Попытайтесь изменить файл на \textit{file2.txt}. Объясните результат;
-			\item Смените права на \textit{file2.txt} на \underline{400}. Попытайтесь изменить файл \textit{file2.txt}. Объясните результат;
-			\item Попытайтесь удалить \textit{file2.txt}. Объясните результат.
-		\end{enumerate}
-		\lstset{style=mystyle}
-		\lstinputlisting[language=Bash]{src/task3/main.sh}
-	% \begin{center}
-	% 	\includegraphics[width=500pt]{task3.png}
-	% \end{center}
+	\subsection*{Задание 3}
+	\addcontentsline{toc}{subsection}{Задание 3}
+	\begin{enumerate}
+		\item Создайте директорию \textit{mydir};
+		\item Установите права доступа для директории в формате \underline{755} (владелец может читать, записывать и выполнять, группа и остальные могут только читать и выполнять;
+		\item Создайте непустой файл \textit{mydir/file2.txt}, права по умолчанию;
+		\item Попытайтесь изменить файл на \textit{file2.txt}. Объясните результат;
+		\item Смените права на \textit{file2.txt} на \underline{400}. Попытайтесь изменить файл \textit{file2.txt}. Объясните результат;
+		\item Попытайтесь удалить \textit{file2.txt}. Объясните результат.
+	\end{enumerate}
+	\lstset{style=mystyle}
+	\lstinputlisting[language=Bash]{src/task3/main.sh}
+% \begin{center}
+% 	\includegraphics[width=500pt]{task3.png}
+% \end{center}
 
-		\subsection*{Задание 4}
-		\addcontentsline{toc}{subsection}{Задание 4}
-		\begin{enumerate}
-			\item Создайте файл \textit{script.sh} в \textit{mydir};
-			\item Установите права доступа для файла в буквенном формате так, чтобы владелец мог читать, записывать и выполнять, а группа и остальные пользователи не имели прав (то есть \underline{rwx------}).
-		\end{enumerate}
-		\lstset{style=mystyle}
-		\lstinputlisting[language=Bash]{src/task4/main.sh}
-	% \begin{center}
-	% 	\includegraphics[width=500pt]{task4.png}
-	% \end{center}
+	\subsection*{Задание 4}
+	\addcontentsline{toc}{subsection}{Задание 4}
+	\begin{enumerate}
+		\item Создайте файл \textit{script.sh} в \textit{mydir};
+		\item Установите права доступа для файла в буквенном формате так, чтобы владелец мог читать, записывать и выполнять, а группа и остальные пользователи не имели прав (то есть \underline{rwx------}).
+	\end{enumerate}
+	\lstset{style=mystyle}
+	\lstinputlisting[language=Bash]{src/task4/main.sh}
+% \begin{center}
+% 	\includegraphics[width=500pt]{task4.png}
+% \end{center}
 
-		\subsection*{Задание 5}
-		\addcontentsline{toc}{subsection}{Задание 5}
-		\begin{enumerate}
-			\item Создайте поддиректорию \textit{subdir} в \textit{mydir};
-			\item Установите права доступа для \textit{subdir} и всех файлов в ней так, чтобы только владелец мог читать и записывать (то есть \underline{700}).
-		\end{enumerate}
-		\lstset{style=mystyle}
-		\lstinputlisting[language=Bash]{src/task5/main.sh}
-	% \begin{center}
-	% 	\includegraphics[width=500pt]{task5.png}
-	% \end{center}
+	\subsection*{Задание 5}
+	\addcontentsline{toc}{subsection}{Задание 5}
+	\begin{enumerate}
+		\item Создайте поддиректорию \textit{subdir} в \textit{mydir};
+		\item Установите права доступа для \textit{subdir} и всех файлов в ней так, чтобы только владелец мог читать и записывать (то есть \underline{700}).
+	\end{enumerate}
+	\lstset{style=mystyle}
+	\lstinputlisting[language=Bash]{src/task5/main.sh}
+% \begin{center}
+% 	\includegraphics[width=500pt]{task5.png}
+% \end{center}
+
+	\subsection*{Задание 6}
+	\addcontentsline{toc}{subsection}{Задание 6}
+	\begin{enumerate}
+		\item Создайте непустой файл \textit{mydir/file3.txt}, права по умолчанию;
+		\item Измените права доступа для директории \textit{mydir} на \underline{600} (только владелец может читать, записывать);
+		\item Проверьте права доступа с помощью команды \textit{ls -ld};
+		\item Попытайтесь удалить \textit{file3.txt}. Объясните результат;
+		\item Попытайтесь изменить \textit{file3.txt}. Объясните результат.
+	\end{enumerate}
+	\lstset{style=mystyle}
+	\lstinputlisting[language=Bash]{src/task6/main.sh}
+% \begin{center}
+% 	\includegraphics[width=500pt]{task6.png}
+% \end{center}
+
 
 \end{document}

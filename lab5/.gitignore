@@ -9,6 +9,3 @@
 
 # ignore ALL .out files
 *.out 
-
-# ignore ALL files in ANY directory named target
-target/

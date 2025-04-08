@@ -1,0 +1,3 @@
+fruit|it's a fruit
+car|it's a car
+incorporation|it's an incorporation

@@ -19,3 +19,5 @@ echo "chmod $RIGHTS $FILE"
 chmod $RIGHTS $FILE
 
 listFile $FILE
+
+scrot -c -d 2 'task1.png' -e 'mv $f ./assets/';

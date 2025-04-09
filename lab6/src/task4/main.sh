@@ -29,3 +29,5 @@ listFile $TARGET_FILE
 
 rm $TARGET_FILE
 rmdir $TARGET_DIR
+
+scrot -c -d 2 'task4.png' -e 'mv $f ./assets/';

@@ -38,3 +38,5 @@ echo "I can't write to the file because of access rights of the dir."
 chmod 755 $TARGET_DIR
 rm $TARGET_FILE
 rmdir $TARGET_DIR
+
+scrot -c -d 2 'task6.png' -e 'mv $f ./assets/';

@@ -25,3 +25,5 @@ catUser $USER2
 
 sudo userdel -r 2>/dev/null $USER1
 sudo userdel -r 2>/dev/null $USER2
+
+scrot -c -d 2 'task11.png' -e 'mv $f ./assets/';

@@ -20,3 +20,5 @@ chmod $RIGHTS $FILE
 listFile $FILE
 
 rm $FILE
+
+scrot -c -d 2 'task2.png' -e 'mv $f ./assets/';

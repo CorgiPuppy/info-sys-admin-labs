@@ -42,3 +42,5 @@ rm $TARGET_FILE
 rmdir $TARGET_DIR
 sudo userdel -r 2>/dev/null $USER1
 sudo userdel -r 2>/dev/null $USER2
+
+scrot -c -d 2 'task13.png' -e 'mv $f ./assets/';

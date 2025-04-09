@@ -61,3 +61,5 @@ echo "I can't remove the file by using simple 'rm' command as it's a read-only f
 chmod 644 $TARGET_FILE
 rm $TARGET_FILE
 rmdir $TARGET_DIR
+
+scrot -c -d 2 'task3.png' -e 'mv $f ./assets/';

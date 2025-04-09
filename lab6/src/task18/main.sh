@@ -55,3 +55,5 @@ rmdir $NEW_TARGET_DIR
 rmdir $TARGET_DIR
 sudo userdel -r 2>/dev/null $USER2
 sudo groupdel $GROUP_NAME
+
+scrot -c -d 2 'task18.png' -e 'mv $f ./assets/';

@@ -95,3 +95,5 @@ do
 	rm ${FILES[i]}
 done
 rmdir $TARGET_FOLDER
+
+scrot -c -d 2 'task1.png' -e 'mv $f ./assets/';

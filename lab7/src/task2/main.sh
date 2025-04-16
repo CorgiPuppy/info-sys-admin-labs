@@ -49,3 +49,5 @@ awk -v number=$number -v zero=0.0 -f $AWK_FILE $TARGET_FILE
 
 rm $TARGET_FILE 
 rmdir $TARGET_FOLDER
+
+scrot -c -d 2 'task2.png' -e 'mv $f ./assets/';

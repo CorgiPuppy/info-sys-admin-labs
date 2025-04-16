@@ -68,3 +68,5 @@ awk -f $MAIN_AWK_FILE $TARGET_FILE
 
 rm $TARGET_FILE
 rmdir $TARGET_FOLDER
+
+scrot -c -d 2 'task3.png' -e 'mv $f ./assets/';

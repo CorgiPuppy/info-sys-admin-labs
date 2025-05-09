@@ -1,33 +1,17 @@
 #!/bin/bash
+. include/constants.env
 
-declare target_file=FLAG.XYZ
-declare content=$(( ($RANDOM % 10 ) + 1 ))
-declare n_digits=8
-declare n_rounds=3;
-declare -a dirs=(a b c d e f g h i j k l)
+declare endtime=$(date -d "$runtime" +%s)
 
-for (( round=1; round<=$n_rounds; round++ )) {
-    for (( i=1; i<$n_digits; i++ )) {
-        content+=$(( $RANDOM % 10 ))
-    }
-    echo $content > $target_file
+declare patrol=src/patrol.sh
+declare thief=src/thief.sh
 
-    mkdir -p {${dirs[0]},${dirs[1]},${dirs[2]}}/{${dirs[3]},${dirs[4]},${dirs[5]},${dirs[6]}}/{${dirs[7]},${dirs[8]},${dirs[9]},${dirs[10]},${dirs[11]}}
-	case $(( ($RANDOM % 3) + 1 )) in
-		1)
-			mv $target_file ${dirs[$(( $RANDOM % 3 ))]}
-			;;
+bash $patrol & 
+patrol_pid=$!
+bash $thief "$runtime" "${dir_names[@]}" &
+thief_pid=$!
 
-		2)
-			mv $target_file ${dirs[$(( $RANDOM % 3 ))]}/${dirs[$(( ($RANDOM % 3) + 3 ))]}
-			;;
+sleep $( cut -d " " -f 1 <<< "$runtime" ) &
+wait $thief_pid
 
-		3)
-			mv $target_file ${dirs[$(( $RANDOM % 3 ))]}/${dirs[$(( ($RANDOM % 3) + 4 ))]}/${dirs[$(( ($RANDOM % 3) + 9 ))]}
-			;;
-	esac
-
-    find . -type f -name "$target_file"
-
-    rm -r {${dirs[0]},${dirs[1]},${dirs[2]}}
-}
+! kill -0 $thief_pid 2>/dev/null && kill $patrol_pid 2>/dev/null

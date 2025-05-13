@@ -22,7 +22,7 @@ echo $content > $target_file
 	
 while true
 do
-	random_depth=$(( ($RANDOM % 1) + 1 ))
+	random_depth=$(( ($RANDOM % 3) + 1 ))
 	case $random_depth in
 		1)
 			path=$target_folder/${dir_names[$(( $RANDOM % 3 ))]}

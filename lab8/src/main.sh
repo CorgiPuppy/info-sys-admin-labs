@@ -8,8 +8,8 @@ declare thief=thief.sh
 
 declare remote_dir_name="remote_directory"
 declare remote_dir="$PWD/$remote_dir_name"
-declare remote_home_dir="/home/corgi/git-repositories/info-sys-admin-labs/lab8/src"
 declare remote_user_name="corgi"
+declare remote_home_dir="/home/$remote_user_name/git-repositories/info-sys-admin-labs/lab8/src"
 declare remote_ip_address=10.6.64.38
 sshfs $remote_user_name@$remote_ip_address:$remote_home_dir $remote_dir
 

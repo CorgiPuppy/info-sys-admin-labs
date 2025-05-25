@@ -4,15 +4,15 @@
 declare endtime=$(date -d "$runtime" +%s)
 
 declare patrol=src/patrol.sh
-#declare thief=thief.sh
-declare thief=src/thief.sh
+declare thief=thief.sh
+#declare thief=src/thief.sh
 
-#declare remote_dir_name="remote_directory"
-#declare remote_dir="$PWD/$remote_dir_name"
-#declare remote_user_name="corgi"
-#declare remote_home_dir="/home/$remote_user_name/git-repositories/info-sys-admin-labs/lab8/src"
-#declare remote_ip_address=10.6.64.38
-#sshfs $remote_user_name@$remote_ip_address:$remote_home_dir $remote_dir
+declare remote_dir_name="remote_directory"
+declare remote_dir="$PWD/$remote_dir_name"
+declare remote_user_name="corgi"
+declare remote_home_dir="/home/$remote_user_name/git-repositories/info-sys-admin-labs/lab8/src"
+declare remote_ip_address="192.168.43.25"
+sshfs $remote_user_name@$remote_ip_address:$remote_home_dir $remote_dir
 
 declare safe_dir=$PWD/$safe_dir_name
 declare target_file_name="FLAG.XYZ"
@@ -28,12 +28,12 @@ do
 	then
 		bash $patrol & 
 		patrol_pid=$!
-		#bash $remote_dir/$thief "$runtime" "${dir_names[@]}" &
-		bash $thief "$runtime" "${dir_names[@]}" &
+		bash $remote_dir/$thief "$runtime" "${dir_names[@]}" &
+		#bash $thief "$runtime" "${dir_names[@]}" &
 		thief_pid=$!
 	else
-		#bash $remote_dir/$thief "$runtime" "${dir_names[@]}" &
-		bash $thief "$runtime" "${dir_names[@]}" &
+		bash $remote_dir/$thief "$runtime" "${dir_names[@]}" &
+		#bash $thief "$runtime" "${dir_names[@]}" &
 		thief_pid=$!
 		bash $patrol & 
 		patrol_pid=$!
@@ -59,4 +59,4 @@ do
 	rmdir $safe_dir
 done
 
-#sudo umount $remote_dir
+sudo umount $remote_dir
